@@ -32,7 +32,9 @@ public class ReverseString {
 }
 
     public static void main(String[] args) {
-        reverseString("hello");
+          String rs=reverseString("hello");
+        System.out.println(rs);
+        System.out.println(reverseString("Amit"));
     }
 
 }

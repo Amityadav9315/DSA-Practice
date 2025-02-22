@@ -59,7 +59,7 @@ public class BalanceParenthesis {
 
     public static void main(String[] args) {
 
-        System.out.println(isExpressionBalanced("({[]}))"));
+        System.out.println(isExpressionBalanced("({325[55]})"));
 
     }
 }

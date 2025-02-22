@@ -4,7 +4,7 @@ import stack.Stack;
 
 import java.util.Scanner;
 
-import static jdk.vm.ci.code.Location.stack;
+//import static jdk.vm.ci.code.Location.stack;
 
 public class postfixoperation {
 
@@ -39,6 +39,9 @@ public class postfixoperation {
                      case '/':
                          stack.push(operand2/operand1);
                          break;
+
+                     default:
+                         System.out.println("Invalid operation");
                  }
              }
 

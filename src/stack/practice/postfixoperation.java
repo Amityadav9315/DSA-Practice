@@ -1,60 +1,32 @@
 package stack.practice;
 
-import java.util.Stack;
+import stack.Stack;
+
+import java.util.Scanner;
 
 public class postfixoperation {
 
+    public static int  evalkuateExpression(String expression ){
+        Stack  stack=new Stack (expression.length() );
 
-    public static int evaluatePostfix(String expression) {
+        //get character
+        for(int i=0; i<expression.length(); i++){
+             char ch=expression.charAt(i);
 
-        Stack<Integer> stack = new Stack<>();
+             if(char)
 
-
-        for (int i = 0; i < expression.length(); i++) {
-            char ch = expression.charAt(i);
-
-            // If the character is a digit, push it onto the stack
-            if (Character.isDigit(ch)) {
-                stack.push(ch - '0'); // Convert character to integer
-            }
-            // If the character is an operator
-            else {
-                // Pop the two operands from the stack
-                int operand2 = stack.pop();
-                int operand1 = stack.pop();
-
-                // Perform the operation based on the operator
-                int result = 0;
-                switch (ch) {
-                    case '+':
-                        result = operand1 + operand2;
-                        break;
-                    case '-':
-                        result = operand1 - operand2;
-                        break;
-                    case '*':
-                        result = operand1 * operand2;
-                        break;
-                    case '/':
-                        result = operand1 / operand2;
-                        break;
-                    default:
-                        System.out.println("Invalid operator: " + ch);
-                        return -1;
-                }
-
-                // Push the result back onto the stack
-                stack.push(result);
-            }
         }
 
-        // The result is the only item left in the stack
-        return stack.pop();
+
+
     }
 
+
+
     public static void main(String[] args) {
-        String expression = "23*5+";  // Example postfix expression
-        System.out.println("Postfix Expression: " + expression);
-        System.out.println("Evaluation Result: " + evaluatePostfix(expression));
+        Scanner  sc=new Scanner(System.in);
+        String ch=sc.next();
+
+
     }
 }

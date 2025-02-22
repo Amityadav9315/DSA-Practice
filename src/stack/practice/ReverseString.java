@@ -17,7 +17,13 @@ public class ReverseString {
             stack.push(ch);
         }
 
+          //stack.displayElements();
 
+        StringBuilder builder=new StringBuilder();
+        while(!stack.isEmpty()){
+            int pop= stack.pop();
+
+        }
 
 }
 

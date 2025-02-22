@@ -19,12 +19,20 @@ public class ReverseString {
 
           //stack.displayElements();
 
-        StringBuilder builder=new StringBuilder();
+        StringBuilder result=new StringBuilder();
         while(!stack.isEmpty()){
             int pop= stack.pop();
+            result.append((char) pop);
+
 
         }
+        return result.toString();
+
 
 }
+
+    public static void main(String[] args) {
+        reverseString("hello");
+    }
 
 }

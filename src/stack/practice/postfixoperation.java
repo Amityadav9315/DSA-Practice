@@ -42,8 +42,6 @@ public class postfixoperation {
 
                      default:
                          System.out.println("Invalid operation");
-                 }
-             }
 
         }
 
@@ -59,4 +57,4 @@ public class postfixoperation {
 
 
     }
-}
+}iuuiuiafweiyufiae

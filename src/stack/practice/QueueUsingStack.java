@@ -15,10 +15,11 @@ public class QueueUsingStack {
 
     public QueueUsingStack(int size){
         this.size=size;
-        stack1=new Stack(this.size);
-        stack2=new Stack(this.size);
+        stack1=new Stack();
+        stack2=new Stack();
     }
     public void enqueue(int data){
+
         this.stack1.push(data);
     }
 
@@ -34,11 +35,21 @@ public class QueueUsingStack {
             if (stack2.isEmpty()) {
                 while (!stack1.isEmpty()) {
                     stack2.push(stack1.pop());
+
+
                 }
             }
-            return stack2.pop();
+            return (int) stack2.pop();
         }
+
         
 
+    }
+
+    public int peek(){
+        if(stack1.isEmpty()&&stack2.isEmpty()){
+            System.out.println("Queue is empty");
+            return -1;
+        }
     }
 }

@@ -51,5 +51,25 @@ public class QueueUsingStack {
             System.out.println("Queue is empty");
             return -1;
         }
+        if(stack2.isEmpty()){
+            while (!stack1.isEmpty()){
+                stack2.push(stack1.pop());
+            }
+        }
+        return (int) stack2.peek();
+    }
+
+
+    public boolean isEmpty(){
+        return stack1.isEmpty() && stack2.isEmpty();
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Creating Queue");
+        QueueUsingStack queueUsingStack=new QueueUsingStack(3);
+
+        queueUsingStack.enqueue(20);
+        queueUsingStack.enqueue(10);
+        System.out.println(queueUsingStack.dequeue());
     }
 }

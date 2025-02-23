@@ -55,7 +55,7 @@ public class postfixoperation {
 
     public static void main(String[] args) {
         Scanner  sc=new Scanner(System.in);
-        System.out.println("Enter Expression: ");
+        System.out.println("Enter postfix  Expression: ");
         String ex=sc.next();
         int result=evalkuateExpression(ex);
         System.out.println(result);

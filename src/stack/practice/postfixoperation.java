@@ -8,53 +8,58 @@ import java.util.Scanner;
 
 public class postfixoperation {
 
-    public static int  evalkuateExpression(String expression ){
-        Stack  stack=new Stack (expression.length() );
+    public static int evalkuateExpression(String expression) {
+        Stack stack = new Stack(expression.length());
 
         //get character
-        for(int i=0; i<expression.length(); i++){
-             char ch=expression.charAt(i);
-              //if it is digit
-             if(Character.isDigit(ch)){
-                 //ch=0
-                 stack.push(ch-'0');
+        for (int i = 0; i < expression.length(); i++) {
+            char ch = expression.charAt(i);
+            //if it is digit
+            if (Character.isDigit(ch)) {
+                //ch=0
+                stack.push(ch - '0');
 
 
-             }
-             else{
-                 int operand1= stack.pop();
-                 int operand2= stack.pop();
+            } else {
+                int operand1 = stack.pop();
+                int operand2 = stack.pop();
 
-                 switch (ch){
+                switch (ch) {
 
-                     case '+':
-                         stack.push(operand2+operand1);
-                         break;
-                     case '-':
-                         stack.push(operand2-operand1);
-                         break;
-                     case '*':
-                         stack.push(operand2*operand1);
-                         break;
-                     case '/':
-                         stack.push(operand2/operand1);
-                         break;
+                    case '+':
+                        stack.push(operand2 + operand1);
+                        break;
+                    case '-':
+                        stack.push(operand2 - operand1);
+                        break;
+                    case '*':
+                        stack.push(operand2 * operand1);
+                        break;
+                    case '/':
+                        stack.push(operand2 / operand1);
+                        break;
 
-                     default:
-                         System.out.println("Invalid operation");
+                    default:
+                        System.out.println("Invalid operation");
 
+                }
+
+
+            }
         }
-
-
-
+        return stack.pop();
     }
+
 
 
 
     public static void main(String[] args) {
         Scanner  sc=new Scanner(System.in);
-        String ch=sc.next();
+        System.out.println("Enter Expression: ");
+        String ex=sc.next();
+        int result=evalkuateExpression(ex);
+        System.out.println(result);
 
 
     }
-}iuuiuiafweiyufiae
+}

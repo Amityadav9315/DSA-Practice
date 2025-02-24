@@ -3,19 +3,25 @@ package Recursion;
 public class SumOnetoTen {
 
 
-    static void sumOnetoTen(int n){
-        int sum=0;
+    static int  sumOnetoTen(int n){
 
-        if(n<10){
-            sum=sum+n;
-            sumOnetoTen(n-1);
+
+        if(n==1){
+            return 1;
         }
+        else{
+            return n+sumOnetoTen(n-1);
+        }
+    //    System.out.println(sum);
 
     }
 
 
     public static void main(String[] args) {
 
-        sumOnetoTen(10);
+        int result=sumOnetoTen(10);
+        System.out.println(result);
+
+
     }
 }

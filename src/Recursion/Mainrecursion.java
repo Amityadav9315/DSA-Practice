@@ -14,5 +14,6 @@ public class Mainrecursion {
 
     public static void main(String[] args) {
         System.out.println("Programe started");
+        printNum(5);
     }
 }

@@ -9,14 +9,14 @@ public class FibonacciSeries {
         else if(n==1){
             return 1;
         }
-        return fibonacciSeries(n-1+n-2);
+        return fibonacciSeries(n-1)+fibonacciSeries(n-2);
 
 
     }
     public static void main(String[] args) {
 
 
-        int result=fibonacciSeries(4);
+        int result=fibonacciSeries(5);
         System.out.println(result);
 
     }

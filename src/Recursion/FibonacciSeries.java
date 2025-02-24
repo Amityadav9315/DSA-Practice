@@ -16,8 +16,13 @@ public class FibonacciSeries {
     public static void main(String[] args) {
 
 
-        int result=fibonacciSeries(5);
-        System.out.println(result);
+       // int result=fibonacciSeries(5);
+       // System.out.println(result);
+
+        for(int i=0; i<=9; i++){
+
+            System.out.println(fibonacciSeries(i));
+        }
 
     }
 }

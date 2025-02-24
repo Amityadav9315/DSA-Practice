@@ -3,7 +3,7 @@ package Recursion;
 public class OneToTen {
     static void onetoten(int n){
         System.out.println(n);
-        if(n<11){
+        if(n<10){
             onetoten(n+1);
         }
     }

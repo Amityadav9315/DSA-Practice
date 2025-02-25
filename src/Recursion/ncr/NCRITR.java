@@ -9,6 +9,18 @@ public class NCRITR {
         return n*fact(n-1);
     }
 
+    static  int nCrRecursion(int n,int r){
+
+        if(r==0||r==n){
+            return 1;
+
+        }
+        if(r>n){
+            return 0;
+        }
+
+    }
+
     //combination
     //ncr
     static int ncr(int n,int r){

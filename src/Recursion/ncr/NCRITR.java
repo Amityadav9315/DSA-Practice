@@ -19,6 +19,8 @@ public class NCRITR {
             return 0;
         }
 
+        return nCrRecursion(n-1,r-1)+nCrRecursion(n-1,r);
+
     }
 
     //combination
@@ -40,7 +42,9 @@ public class NCRITR {
 
         int n=10;
         int r=10;
-        System.out.println(ncr(n,r));
+        System.out.println(nCrRecursion(n,r));
+
+
 
     }
 }

@@ -22,6 +22,7 @@ public class PascalTriangle {
 
         return factN/(factR*(factNR));
 
+
     }
 
     public static void main(String[] args) {

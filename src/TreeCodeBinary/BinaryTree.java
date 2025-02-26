@@ -18,9 +18,36 @@ public class BinaryTree {
         if(node==null){
             return;
         }
-        System.out.println(node.data);
+        System.out.print(node.data+"\t");
+
+        preOrder(node.left);
+        preOrder(node.right);
 
     }
+    //Inorder-->Left-->Root-->Right
+    public  void inOrder(Node node){
+        if(node==null){
+            return;
+        }
+        inOrder(node.left);
+        System.out.print(node.data+"\t");
+        inOrder(node.right);
+
+    }
+    //Postorder-->Left-->Root-->Right
+
+    public  void postOrder(Node node){
+        if(node==null){
+            return;
+        }
+        postOrder(node.right);
+        postOrder(node.left);
+        System.out.print(node.data+"\t");
+    }
+
+
+
+
 
 
 }

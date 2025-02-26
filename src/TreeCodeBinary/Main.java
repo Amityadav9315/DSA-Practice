@@ -36,6 +36,8 @@ public class Main {
 
         //traversal
 
+        binaryTree.preOrder(binaryTree.root);
+
 
 
 

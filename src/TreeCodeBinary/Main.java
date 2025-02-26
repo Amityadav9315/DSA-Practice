@@ -21,6 +21,14 @@ public class Main {
         binaryTree.root.left=left;
         binaryTree.root.right=right;
 
+        //node 4 and 5
+
+        Node node4=new Node(4);
+        Node node5=new Node(5);
+
+        binaryTree.root.left.left=node4;
+        binaryTree.root.left.right=node5;
+
 
 
 

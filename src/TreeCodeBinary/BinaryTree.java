@@ -12,5 +12,15 @@ public class BinaryTree {
         this.root=null;
     }
 
+    //DFS
+    //Preorder-->Root-->Left-->Right
+    public  void preOrder(Node node){
+        if(node==null){
+            return;
+        }
+        System.out.println(node.data);
+
+    }
+
 
 }

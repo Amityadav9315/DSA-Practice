@@ -29,6 +29,14 @@ public class Main {
         binaryTree.root.left.left=node4;
         binaryTree.root.left.right=node5;
 
+        //node 6
+        Node node6=new Node(6);
+        binaryTree.root.right.right=node6;
+
+
+        //traversal
+
+
 
 
 

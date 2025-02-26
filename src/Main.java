@@ -10,7 +10,11 @@ public class Main {
         //tree banana start karte hai
         //creating root node
         Node root=new Node(1);
-        //left chilf of tree
+        //left chilf of root
+        Node left=new Node(2);
+        //right child of root
+        Node right=new Node(3);
+
 
 
         }

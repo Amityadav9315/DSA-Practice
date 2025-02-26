@@ -1,4 +1,4 @@
-import TreeCodeBinary.Node;
+package TreeCodeBinary;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -14,6 +14,8 @@ public class Main {
         Node left=new Node(2);
         //right child of root
         Node right=new Node(3);
+
+        BinaryTree binaryTree=new BinaryTree(root);
 
 
 

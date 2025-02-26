@@ -25,6 +25,14 @@ public class Node {
 
 
       }
+      public Node getRight(){
+          return right;
+      }
+      public void setRight(Node right){
+          this.right=right;
+      }
+
+
 
 
 

@@ -18,6 +18,13 @@ public class Main {
         BinaryTree binaryTree=new BinaryTree(root);
 
 
+        binaryTree.root.left=left;
+        binaryTree.root.right=right;
+
+
+
+
+
 
         }
     }
